@@ -11,8 +11,10 @@ public class AppOutputGenerator {
 
 	OutputHelper output = (OutputHelper) context.getBean("OutputHelper");
 	OutputHelper outputSeteado = (OutputHelper) context.getBean("OutputHelperSeteado");
+	OutputHelper outputTxt = (OutputHelper) context.getBean("OutputHelperSeteadoTxt");
 	output.generateOutput();
 	outputSeteado.generateOutput();
+	outputTxt.generateOutput();
     }
 
 }
